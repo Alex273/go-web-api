@@ -1,22 +1,11 @@
 package greetings
 
 import (
-	"errors"
 	"fmt"
 )
 
-func PrintName(name string) (string, error) {
-	//fmt.Println(fmt.Sprintf("Hi, %v. Welcome from greeting!", name))
-	//
-	//return name
+func PrintName(name string) string {
+	fmt.Println(fmt.Sprintf("Hi, %v. Welcome from greeting!", name))
 
-	// If no name was given, return an error with a message.
-	if name == "" {
-		return "", errors.New("empty name")
-	}
-
-	// If a name was received, return a value that embeds the name
-	// in a greeting message.
-	message := fmt.Sprintf("Hi, %v. Welcome!", name)
-	return message, nil
+	return name
 }
