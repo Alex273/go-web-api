@@ -9,7 +9,7 @@ import (
 func say_hello() {
 	fmt.Println(quote.Go())
 
-	message := greetings.PrintName("Mike")
+	message := greetings.PrintName("")
 
 	fmt.Println(fmt.Sprintf("Hi, %v. Welcome from Hello module!", message))
 }
